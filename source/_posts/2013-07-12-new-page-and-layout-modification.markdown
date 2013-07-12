@@ -40,7 +40,7 @@ postと同様な枠のついたかたちで、アップロードされます。
 
 たとえば、新しく作ったページを"Blog"や"Archives"と並ぶ
 リンクとして追加したい場合は、
-``_inlucdes/custom/navigation.html``をエディタで編集し、追加します。
+``source/_inlucdes/custom/navigation.html``をエディタで編集し、追加します。
 
 ```html
 <ul class="main-navigation">
