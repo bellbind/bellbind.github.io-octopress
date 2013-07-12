@@ -1,0 +1,39 @@
+---
+layout: post
+title: "new post"
+date: 2013-07-12 16:52
+comments: true
+categories: [octopress]
+---
+
+記事を追加する場合、まず以下のコマンドによって
+ひな形のソースファイルを作成します。
+
+```bash
+rake new_post["title become url"]
+```
+
+<!-- more -->
+
+すると、``source/_posts/YYYY-MM-DD-title-become-url.markdown``という
+ファイルが、以下のような内容で作成されます:
+
+```
+---
+layout: post
+title: "title become url"
+date: YYYY-MM-DD mm:ss
+comments: true
+categories: 
+---
+
+```
+
+上部のマイナス3本で囲まれた領域は、ページのヘッダ情報(YAML形式)です。
+rakeで渡したのはURL用のタイトルであり、ASCIIのみをURLに入れるようにしておいて、
+ヘッダの``title``を日本語文に書き換えても構いません。
+
+この下に本文を 
+[markdown形式](http://daringfireball.net/projects/markdown/syntax) 
+で記入します。
+

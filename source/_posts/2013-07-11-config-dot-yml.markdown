@@ -3,10 +3,10 @@ layout: post
 title: "_config.yml について"
 date: 2013-07-11 14:55
 comments: true
-categories: [octpress]
+categories: [octopress]
 ---
 
-Octpressの設定は、``_config.yml``で行う。
+Octopressの設定は、``_config.yml``で行う。
 
 <!-- more -->
 

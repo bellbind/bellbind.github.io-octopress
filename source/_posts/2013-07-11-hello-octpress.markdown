@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Hello Octpress"
+title: "Hello Octopress"
 date: 2013-07-11 14:19
 comments: true
 categories: [misc]
 ---
 
-はじめてのOctpressポスト。
+はじめてのOctopressポスト。
 
 <!-- more -->
 
-- [octpress](http://octopress.org/)
+- [octopress](http://octopress.org/)
 - [repo](https://github.com/bellbind/bellbind.github.io)
 
