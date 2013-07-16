@@ -46,36 +46,14 @@ git config branch.master.remote origin
 git push -u origin master
 ```
 
-## submoduleの追加
-
-github pagesに上げるリポジトリは、``_deploy``にあります。
-これをsubmodule化すると多少便利です。
-
-``.gitignore``で``_deploy``が指定されているのでエディタで編集し、
-外しておきます。
-
-```bash
-rm -rf _deploy
-git submodule add git@github.com:username/username.github.io.git _deploy
-git submodule init
-git submodule update
-```
-
-更新をアップします。
-
-```bash
-git add .gitignore
-git commit -m "add submodule _deploy"
-git push
-```
+## 復元の仕方
 
 このソースリポジトリをpullして使うには、以下のようになるでしょう
 
 ```bash
 git clone git@github.com:username/username.github.io-octopress.git
 cd username.github.io-octopress
-git submodule init
-git submodule update
+git clone git@github.com:username/username.github.io.git _deploy
 gem install bundler
 bundle install
 # rake installは不要
